@@ -1,0 +1,114 @@
+	.slick-slider {
+		position: relative; display: block; overflow: hidden;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-touch-callout: none;
+		-khtml-user-select: none;
+		-ms-touch-action: pan-y;
+		touch-action: pan-y;
+		-webkit-tap-highlight-color: transparent;
+	}
+	
+	.slick-list {
+		position: relative; display: block; overflow: hidden; margin: 0; padding: 0;
+	}
+	
+	.slick-list:focus {
+		outline: none;
+	}
+	
+	.slick-list.dragging {
+		cursor: pointer; cursor: grab;
+	}
+	
+	.slick-track {
+		position: relative; top: 0; left: 0; display: block; height: 100%;
+	}
+	
+	.slick-track:before,
+	.slick-track:after {
+		display: table; content: '';
+	}
+	
+	.slick-track:after {
+		clear: both;
+	}
+	
+	.slick-loading .slick-track {
+		visibility: hidden;
+	}
+	
+	.slick-slide {
+		display: none; float: left; height: 100%; min-height: 1px;
+	}
+	
+	[dir='rtl'] .slick-slide {
+		float: right;
+	}
+	
+	.slick-slide img {
+		display: block;
+	}
+	
+	.slick-slide.slick-loading img {
+		display: none;
+	}
+	
+	.slick-slide.dragging img {
+		pointer-events: none;
+	}
+	
+	.slick-initialized .slick-slide {
+		display: block;
+	}
+	
+	.slick-loading .slick-slide {
+		visibility: hidden;
+	}
+	
+	.slick-vertical .slick-slide {
+		display: block; height: auto;
+		border: 1px solid transparent;
+	}
+	
+	.slick-arrow.slick-hidden {
+		display: none;
+	}
+	
+	.slick-prev,
+	.slick-next {
+		position: absolute; top: 50%; display: inline-block; padding: 0; cursor: pointer; z-index: 1000;
+		background: none; opacity: 0.75;
+	}
+	
+	.slick-prev:hover,
+	.slick-prev:focus,
+	.slick-next:hover,
+	.slick-next:focus {
+		opacity: 1; outline: none;
+	}
+	
+	.slick-prev.slick-disabled:before,
+	.slick-next.slick-disabled:before {
+		opacity: 0.25;
+	}
+	
+	.slick-prev,
+	[dir='rtl'] .slick-next {
+		right: auto; left: 1em;
+	}
+	
+	.slick-next,
+	[dir='rtl'] .slick-prev {
+		right: 1em; left: auto;
+	}
+	
+	ul.slick-dots,
+	ul.slick-dots li {
+		margin: 0; z-index: 1000;
+	}

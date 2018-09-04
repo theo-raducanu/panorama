@@ -1,0 +1,48 @@
+/* ====================================
+	Styles for featured area metaboxes
+	Daze Featured Area plugin
+======================================= */
+	.clearfix:after {
+		display: table; clear: both; content: "";
+	}
+
+	#daze_featured_area_meta_boxes-daze-featured-area-meta-boxes {
+		display: none;
+	}
+
+	.daze-featured-metabox {
+		display: none;
+	}
+
+	#daze-featured-gallery .gallery-preview {
+		margin-top: 1em; min-height: 60px;
+	}
+
+	#daze-featured-gallery .img-wrapper {
+		position: relative; display: inline-block; float: left;
+		height: 60px; margin: 5px;
+	}
+
+	#daze-featured-gallery .gallery-img {
+		height: 100%; display: inline-block;
+	}
+
+	#daze-featured-gallery .remove-image {
+		position: absolute; top: -4px; right: -4px;
+		display: inline-block; width: 16px; height: 16px;
+		border: 1px solid #aaa;
+		border-radius: 50%;
+		background: #fff; color: #aaa;
+		text-align: center; font-weight: 700; font-size: 12px;
+		cursor: pointer;
+	}
+
+	body.dragging, body.dragging * {
+		cursor: move !important;
+	}
+
+	#daze-featured-gallery .dragged {
+		position: absolute;
+		opacity: 0.5;
+		z-index: 2000;
+	}

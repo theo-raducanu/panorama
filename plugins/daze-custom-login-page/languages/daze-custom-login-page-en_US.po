@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Daze Custom Login Page 2.0\n"
+"POT-Creation-Date: 2017-11-16 21:55+0100\n"
+"PO-Revision-Date: 2017-11-16 21:55+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_attr__;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: daze-custom-login-page.php:18
+msgid "on"
+msgstr ""
+
+#: daze-custom-login-page.php:60
+msgid "Welcome to"
+msgstr ""
+
+#: daze-custom-login-page.php:61
+msgid "login page"
+msgstr ""
+
+#: daze-custom-login-page.php:79
+msgid "Daze Theme, by NordWood Themes"
+msgstr ""
+
+#: daze-custom-login-page.php:90
+msgid "Daze custom login page"
+msgstr ""
+
+#: daze-custom-login-page.php:103
+msgid "Background"
+msgstr ""
+
+#: daze-custom-login-page.php:108
+msgid "Image"
+msgstr ""
+
+#: daze-custom-login-page.php:109
+msgid "Pattern"
+msgstr ""
+
+#: daze-custom-login-page.php:110
+msgid "Solid color"
+msgstr ""
+
+#: daze-custom-login-page.php:122
+msgid "Background image"
+msgstr ""
+
+#: daze-custom-login-page.php:137
+msgid "Background color"
+msgstr ""
+
+#: daze-custom-login-page.php:152
+msgid "Text color"
+msgstr ""
+
+#: daze-custom-login-page.php:166
+msgid "Fields background"
+msgstr ""
+
+#: daze-custom-login-page.php:175
+msgid "100"
+msgstr ""
+
+#: daze-custom-login-page.php:180
+msgid "Fields background opacity (%)"
+msgstr ""
+
+#: daze-custom-login-page.php:195
+msgid "Show NordWood logo"
+msgstr ""

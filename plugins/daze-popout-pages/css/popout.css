@@ -1,0 +1,244 @@
+/* =============================
+	Styles for Popout pages
+	Daze Pop-out pages plugin
+================================ */
+	.clearfix:after {
+		display: table; clear: both; content: "";
+	}
+
+	html.popout-active {
+		min-height: initial; overflow: hidden;
+	}
+
+	body.popout-active {
+		height: 100%; overflow: hidden;
+	}
+
+	.popout-holder-overlay {
+		position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+		width: 100%; min-height: 100%;
+		overflow-y: scroll; z-index: 99992;
+		text-align: center;
+	}
+
+	.popout-holder-overlay.reveal {
+		transition: background 1.2s ease;
+		background: rgba(0,0,0,0.6);
+	}
+
+	.popout-clone-holder {
+		position: absolute; left: 0; top: 0; z-index: -1;
+		display: inline-block; width: auto; max-width: 90%;
+		opacity: 0;
+		font-family: inherit; font-weight: inherit; font-size: inherit; color: inherit;
+	}
+
+	.popout-holder {
+		position: relative; display: inline-block;
+		width: auto; max-width: 90%; margin: 0 auto; margin-top: 6%;
+		z-index: 99993;
+		font-family: inherit; font-weight: inherit; font-size: inherit; color: inherit;
+		transition: background 0.4s ease;
+		background: none;
+	}
+
+	.popout-holder.reveal {
+		transition: background 1s ease 0.5s;
+		background: #fff;
+	}
+
+	.popout-holder svg.popout-bgr {
+		position: absolute; left: 0; top: 0; z-index: -1; display: inline-block;
+		width: 100%; height: 100%;
+	}
+
+	.popout-holder rect.frame {
+		width: 100%; height: 100%; display: inline-block;
+		fill: rgba(255,255,255,0);
+		stroke-width: 3;
+		stroke-dasharray: 6000px; stroke-dashoffset: 6000px;
+		animation: drawBorder 0.5s linear forwards;
+	}
+
+	@-webkit-keyframes drawBorder {
+		100% { stroke-dashoffset: 0; }
+	}
+
+	@keyframes drawBorder {
+		100% { stroke-dashoffset: 0; }
+	}
+
+	.popout-holder .popout-close {
+		position: absolute; top: 0; right: 0; width: 36px; height: 36px;
+		display: inline-block; cursor: pointer; z-index: 1;
+		background: #131313;
+		transition: opacity 0.4s ease;
+		opacity: 0;
+	}
+
+	.popout-holder .popout-close.reveal {
+		transition: opacity 0.4s ease 1s;
+		opacity: 1;
+	}
+
+	.popout-holder .popout-close svg {
+		display: inline-block; vertical-align: -2px;
+		width: 14px; height: 14px;
+	}
+
+	.popout-holder .popout-close svg path {
+		fill: #fff;
+	}
+
+	.popout-clone-wrapper {
+		overflow: hidden;
+	}
+
+	.popout-wrapper {
+		overflow: hidden;
+		transition: opacity 0.4s ease;
+		background: none;
+		opacity: 0;
+	}
+
+	.popout-wrapper.reveal {
+		transition: opacity 0.5s ease 1s;
+		opacity: 1;
+	}
+
+	.popout {
+		padding: 0; margin: 0;
+	}
+
+	.popout-content {
+		padding: 4em 2em; margin: 0;
+	}
+
+	.popout.hide-title .popout-title {
+		display: none;
+	}
+
+	.popout h1,
+	.popout h2,
+	.popout h3,
+	.popout h4,
+	.popout h5,
+	.popout h6 {
+		font-weight: 700; color: #111; line-height: 1.4em;
+		margin-bottom: 0.5em;
+	}
+
+	.popout h1 {
+		font-size: 2.2em; line-height: 1.1em;
+	}
+
+	.popout h2 {
+		font-size: 2em;
+	}
+
+	.popout h3 {
+		font-size: 1.4em;
+	}
+
+	.popout h4 {
+		font-size: 1.3em;
+	}
+
+	.popout h5 {
+		font-size: 1.1em;
+	}
+
+	.popout h6 {
+		font-size: 0.86em; font-weight: 600;
+	}
+
+	.popout-featured-image img {
+		display: block; width: 100%; height: auto;
+	}
+
+	.popout.img-fixed,
+	.popout.img-fixed  .popout-featured-image {
+		height: 100%; width: auto; max-width: none;
+	}
+
+	.popout.img-fixed .popout-featured-image img {
+		height: 100%; width: auto; max-width: none;
+	}
+
+	.popout.featured-image-rounded .popout-featured-image img {
+		display: inline-block; width: auto; height: auto; max-width: 256px;
+		margin: 2em auto 0;
+		border-radius: 50%;
+	}
+
+	.popout .edit-link {
+		clear: both; display: inline-block; margin-bottom: 1em;
+	}
+
+	.popout .wpcf7-form textarea,
+	.popout .wpcf7-form input[type="text"],
+	.popout .wpcf7-form input[type="email"] {
+		width:100%; margin-bottom:2em;
+	}
+
+@media only screen and (min-width:768px) {
+	h1 {
+		font-size: 3.2em;
+	}
+	
+	h2 {
+		font-size: 2.5em;
+	}
+	
+	h3 {
+		font-size: 1.57em;
+	}
+	
+	h4 {
+		font-size: 1.4em;
+	}
+}	
+
+@media only screen and (min-width:1024px) {
+	.popout.featured-image-right .popout-featured-image {
+		display: inline-block; width: 50%; float: right;
+	}
+	
+	.popout.featured-image-right .popout-content {
+		display: inline-block; width: 50%; float: left;
+	}
+}
+
+@media only screen and (min-width:1180px) {
+	.popout-holder {
+		margin: 75px auto 0;
+	}
+	
+	.popout-content {
+		padding: 4em 8em; margin: 0;
+	}
+	
+	.popout.featured-image-right .popout-content {
+		padding: 4em 4em 3em;
+	}
+	
+	.popout:not(.img-only) {
+		width: 900px;
+	}
+	
+	.popout.featured-image-right .popout-featured-image {
+		display: inline-block; width: 450px; float: right;
+	}
+	
+	.popout.featured-image-rounded .popout-featured-image img {
+		margin: 4em auto 0;
+	}
+	
+	.popout.featured-image-right .popout-content {
+		display: inline-block; width: 450px; float: left;
+	}
+	
+	.popout .wpcf7-form {
+		width: 70%; margin: 0 auto;
+	}
+}
