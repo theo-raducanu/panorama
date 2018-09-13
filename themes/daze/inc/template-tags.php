@@ -766,7 +766,7 @@
 			
 		// Search for retina image first
 			if( $site_logo_retina_url ) {
-				$orig_img_arr = wp_get_attachment_metadata(daze_get_post_id_by_url( esc_url_raw( $site_logo_retina_url ) ));
+				$orig_img_arr = wp_get_attachment_metadata(daze_get_post_id_by_url(  $site_logo_retina_url  ));
 				$orig_img_W = $orig_img_arr['width'];
 				$orig_img_H = $orig_img_arr['height'];
 				$retina_W = $orig_img_W/2;
@@ -1741,7 +1741,7 @@
 					$profile_url = $pair[1];
 					
 					$links .= sprintf(
-						'<a class="bw" href="%1$s" target="_blank" title="%2$s">',
+						'<a class="bw" href="%1$s" target="_blank" title="z">',
 						esc_url( $profile_url ),
 						esc_attr( $network )
 					);

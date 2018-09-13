@@ -1,6 +1,6 @@
 <?php
 /* ==============================================
-	Template Name: Contact page
+	Template Name: Page Content
 	Daze - Premium WordPress Theme, by NordWood
 ================================================= */
 	get_header();

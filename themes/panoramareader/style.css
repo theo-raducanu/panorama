@@ -4,6 +4,361 @@ Description: Theme for Panorama Reader
 Author: Theodor Raducanu
 Author URI: mircwebsolutions@outlook.com
 Template: daze
-Version: 1.0.0
-Text Domain: daze
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, full-width-template,custom-menu, editor-style, featured-images, featured-image-header, post-formats, sticky-post, theme-options, translation-ready
+Text Domain: daze-child
 */
+/*Global*/
+/* input[type='submit'], a.button-link, .top-bar.desktop .top-menu a:hover, .top-bar.desktop .top-menu a:active, .search-button:hover, .search-button:active, .popout-content a, .current-menu-item > a, #site-header nav a:hover, #site-header nav a:active, .post-category a, .masonry-item .cover-item:hover .featured-area:not(:empty) + .post-header .post-category a, .no-results, .error404 .post-category, .post-excerpt a, .post-content a, .post-content li, .page-links a, .edit-link a, .post-nums a.page-numbers, .post-nums a.page-numbers, .tagcloud .count, .widget.latest-comments a:hover, .widget.latest-comments a:active, .widget .cat-item .count, .widget .rsswidget, .copyrights a {
+    color: #ff2955;
+} */
+@media only screen and (min-width: 1180px) {
+	.top-bar.desktop nav {
+		padding: 0 !important;
+	}
+}
+.menu {
+    margin: auto !important;
+}
+.main-menu ul.sub-menu {
+    padding-top: 20px;
+}
+.main-menu .menu-item svg , .menu--shylock .menu__item ul.sub-menu .menu__link::after, .menu--shylock .menu__item ul.sub-menu .menu__link::before{
+	display: none !important;
+}
+.menu--shylock .menu__link::before, .menu--shylock .menu__link::after {
+	bottom: 10px !important;
+	transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.menu--shylock .menu__item--current ul.sub-menu .menu__link {
+    color: #b5b5b5;
+}
+.menu--shylock .menu__item > .menu__link:hover:before, .menu--shylock .menu__item > .menu__link:hover:after {
+	background-color: #ff2955;
+}
+a.button-link {
+	position: relative;
+	z-index: 0;
+}
+a.button-link:after {
+	content: "";
+    width: 100%;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+    top: 0;
+    left: 0;
+	background: #ff2955 !important;
+	transition: all 0.3s;
+	transition-timing-function: ease-out;
+}
+a.button-link:hover:after, a.button-link:active:after {
+    height: 100%;
+}
+a.button-link:hover, a.button-link:active {
+    color: #fff !important;
+}
+.top-bar .tagline,.top-bar .search-text,.top-bar .menu__link{
+    font-size: 15px !important;
+}
+/* #site-header nav a:hover {
+	color: inherit !important;
+} */
+/* a.button-link {
+    border: 3px solid #fff;
+    color: #fff;
+} */
+a.button-link {
+    transition: all 0.3s;
+}
+.cs-active, .cs-active .cs-options {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.cs-options li[data-value="-1"] {
+	display: none !important;
+}	
+.cs-select span {
+	font-size: 13px;
+}
+.cs-skin-border > span {
+	font-size: 18px;
+}
+.cs-skin-border.cs-active > span, .cs-skin-border .cs-options {
+    color: #000 !important;
+}
+#cf7md-form .mdc-button--primary.mdc-button--raised {
+	background-color: #ff2955 !important;
+}
+/*Header*/
+.retina-logo {
+	max-width: 600px;
+}
+.normal-logo {
+	max-width: 400px;
+}
+.panorama-logo {
+	width: 300px !important;
+	max-width: 300px !important;
+}
+.wtr-time-wrap {
+	color: #7e7e7e !important;
+    display: block !important ;
+	clear: both;
+	margin-bottom: 30px !important;
+}
+body > div.desktop.top-bar.clearfix.total-3 > div.right > div.social > a {
+    display: inline-block !important;
+}
+/*Typography*/
+body, .button-link  {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 300; 
+	font-size: 14px;
+}
+.button-link {
+	font-family: 'Roboto', sans-serif; 
+	font-size: 12px; 
+	font-weight: 600;
+}
+select,
+	textarea,
+	input[type="password"],
+	input[type="search"],
+	input[type="url"],
+	input[type="text"],
+	input[type="email"] {
+		padding: 1.1em 1.6em;
+		border: 1px solid #e8e8e8; background: #fff;
+		font-family: 'Roboto', sans-serif; font-size: 11px; color: #111;
+		letter-spacing: 0.05em; font-weight: 400;
+	}
+select:focus,
+textarea:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+	border-color: #cfcfcf; outline: none;
+}
+input[type="submit"] {
+	display: inline-block; padding: 1em 1.6em;
+	background: #fff; border: 1px solid #e8e8e8;
+	font-family: 'Roboto', sans-serif; font-size: 12px; font-weight: 600;
+}
+article.page .post-content p, article.post .post-content p, .post-excerpt p {
+	line-height: 23px !important;
+}
+#menu-top-bar-1 {
+	min-height: 40px;
+}
+#menu-top-bar-1 li{
+	margin-top: 15px;
+}
+/*Home*/
+.masonry-item article:hover .post-format-icon > svg {
+	fill: #fff !important;
+}
+.nwps .overlay {
+	opacity: 0.6 !important;
+}
+.masonry-item, .author {
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+.masonry-item:hover {
+	/*-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+
+  	box-shadow: 2px 8px 20px 0 rgba(31,32,68,.25);
+    transform: scale(1.015);
+}
+.masonry-item article {
+	width: 100.1% !important;
+}
+/*about*/
+@media only screen and (min-width: 1280px) {
+	.page .post-content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+.no-spacing .vc_column-inner {
+	padding: 0 !important;
+}
+.hover-col .vc-hoverbox-inner {
+	min-height: 210px !important;
+}
+div.about-text-col.wpb_column.vc_column_container.vc_col-sm-8.vc_col-has-fill > div > div > div > div > p {
+	font-size: 20px;
+	line-height: 30px !important;
+}
+.about-text-col, .office-text-col {
+	margin-left: 15px !important;
+	margin-right: -15px !important;
+	padding-right: 15px !important;
+}
+.office-text-col {
+	margin-left: 15px !important;
+	margin-right: -15px !important;
+	padding-right: 30px !important;
+}
+.office-image-col {
+	margin-right: 15px !important;
+	margin-left: -15px !important;
+	padding-left: 15px !important;
+}
+@media only screen and (min-width: 1180px) {
+	.about-text-col .vc_column-inner{
+		padding: 100px !important;
+	}
+	.office-text-col .vc_column-inner{
+		padding-left: 30px !important;
+	}
+	.collaborators .vc_column-inner{
+		padding-left: 30px !important;
+	}
+	.collaborators {
+		margin: 15px 0 !important;
+	}
+}
+.hover-col  .vc-hoverbox-front-inner > h2, .office-text-col h2, .collaborators h2 {
+	/* text-transform: uppercase; */
+	/* text-decoration: underline; */
+	border-bottom: 4px solid black; 
+	/* letter-spacing: 5px; */
+	width: auto !important;
+    display: inline-block;
+}
+.hover-col .vc-hoverbox-front-inner {
+	background: white;
+	margin: 0 auto;
+	width: auto;
+	padding: 10px 20px;
+}
+.about-image .wpb_single_image {
+	margin-bottom: 15px !important;
+}
+.hover-col .vc-hoverbox-inner {
+	overflow: visible;
+}
+.office-image-col .vc_column-inner, .collaborators > .wpb_column >.vc_column-inner, .about-text-col .vc_column-inner, .office-text-col .vc_column-inner, .hover-col .vc-hoverbox-block, .about-image .wpb_single_image {
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+}
+.type-popout .wpcf7-email {
+	font-size: 20px;
+	line-height: 32px;
+	border-bottom: 2px solid !important;
+	text-align: center;
+	width: 70% !important;
+	margin: 0 auto !important;
+}
+.type-popout .wpcf7-submit {
+    background-color: #ff2955 !important;
+}
+.popup-text {
+	padding: 30px !important;
+}
+#cf7md-form .mdc-textfield--focused.mdc-textfield--upgraded:not(.mdc-textfield--fullwidth):not(.mdc-textfield--multiline)::after {
+    background-color: #000 !important;
+}
+#cf7md-form .mdc-textfield--focused .mdc-textfield__label {
+    color: #000 !important;
+}
+/*Contact*/
+.contact-image-col .wpb_single_image {
+	margin-bottom: 0 !important;
+}
+.contact-form-col .vc_column-inner {
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	padding: 20px 30px !important;
+}
+.contact-form-col .wpb_text_column {
+	margin-bottom: 15px !important;
+}
+.contact-image-col .vc_column-inner {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+#cf7md-form .cf7md-item {
+    margin-bottom: 15px !important;
+}
+/*Footer*/
+.footer-wrapper .widget-title {
+	text-align: left !important;
+}
+.footer-wrapper #daze_social-2 {
+	margin: 0 !important;
+	width: 100%;
+}
+.footer-wrapper #daze_social-2 h2, .footer-wrapper #daze_social-2 h6 {
+	display: none;
+} 
+.footer-wrapper #daze_top_posts-4 .top-posts-slider .thumb {
+    width: 65px;
+	height: 65px;
+}
+.footer-wrapper #daze_top_posts-4 .top-posts-slider .content {
+	height: 70px;
+}
+#sidebar-site_footer * {
+	color: #ffffff;
+}
+#sidebar-site_footer .eye {
+	fill: #fff;
+}
+.footer-wrapper form * , .footer-wrapper #cf7md-form > div > div.cf7md-item.cf7md-text.mdc-layout-grid__cell.mdc-layout-grid__cell--span-12 > span > div > label{
+	color: #ffffff !important;
+	text-align: left !important;
+}
+.footer-wrapper #cf7md-form .mdc-textfield--focused.mdc-textfield--upgraded:not(.mdc-textfield--fullwidth):not(.mdc-textfield--multiline)::after ,  .footer-wrapper #cf7md-form .mdc-textfield::after{
+    background-color: white !important;
+}
+#site-footer .social svg {
+    width: 30px;
+	height: 30px;
+}
+#site-footer p {
+	text-align: left !important;
+	line-height: 24px !important;
+}
+.slick-dots li:not(.slick-active) h3 {
+	color: #b5b5b5 !important;
+}
+#daze_social-2 > .social {
+	padding: 2em 0;
+}
+/*Mobile*/
+.top-bar.mobile .site-logo img {
+	width: auto !important;
+}
+@media only screen and (min-width: 1280px) {
+	#site-footer .social a {
+		margin: 0 25px;
+	}
+}
+@media only screen and (min-width: 1180px) {
+	.top-bar.desktop .social svg {
+		height: 17px !important;
+	}
+	.top-bar.desktop .social a {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+@media only screen and (min-width: 1180px) {
+	.top-bar.desktop .search-button {
+		min-height: 42px;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	.footer-wrapper .slick-active h3 {
+		transition: font-size 0.5s;
+		font-size: 2.5em;
+	}
+}
